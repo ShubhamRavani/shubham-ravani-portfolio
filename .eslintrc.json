@@ -1,0 +1,44 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": ["plugin:react/recommended", "standard", "plugin:react-hooks/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint", "react-hooks"],
+    "settings": {
+      "react": {
+        "version": "17"
+      }
+    },
+    "rules": {
+      "react/no-unknown-property": "error",
+      "react/prop-types": "off",
+      "react/self-closing-comp": ["error", { "component": true, "html": true }],
+      "no-undef": "off",
+      "space-before-function-paren": "off",
+      "comma-dangle": "off",
+      "import/un-resolved": "off",
+      "import/order": ["error", { "groups": ["builtin", "external", "internal"] }],
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": "error",
+      "indent": "off",
+      "no-console": "warn",
+      "no-useless-constructor": "off",
+      "no-unused-expressions": "off",
+      "func-call-spacing": "off",
+      "camelcase": "off",
+      "multiline-ternary": "off"
+    }
+}
+  
